@@ -3,10 +3,16 @@ from chat import get_response
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+#CORS(app)
+
+@app.post("/")
+def index_get():
+    return render_template("base.htlm")
+
 
 @app.post("/predict")
-def predict():commit
+def predict():
+    text = request.get_json().get("message")
     # TODO: check if test is valid
     response = get_response(text)
     message = {"answer", response}
