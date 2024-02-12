@@ -47,7 +47,7 @@ class Chatbox {
         this.messages.push(msg1);
 
         // 'http://127.0.0.1:5000/predict'
-        fetch(input: $SCRIPT_ROOT, '/predict', int: {
+        fetch(http://127.0.0.1:5000/predict' {
             method: 'POST',
             body: JSON.stringify(value: { message: text1 }),
             mode: 'cors',
