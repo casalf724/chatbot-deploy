@@ -1,9 +1,9 @@
 class Chatbox {
     constructor() {
         this.args = {
-            openButton: document.querySelector('.chatbox__button'),
-            chatBox: document.querySelector('.chatbox__support'),
-            sendButton: document.querySelector('.send__button')
+            openButton: document.querySelector(selectors: '.chatbox__button'),
+            chatBox: document.querySelector(selectors: '.chatbox__support'),
+            sendButton: document.querySelector(selectors:'.send__button')
         }
 
         this.state = false;
@@ -13,12 +13,12 @@ class Chatbox {
     display() {
         const {openButton, chatBox, sendButton} = this.args;
 
-        openButton.addEventListener('click', () => this.toggleState(chatBox))
+        openButton.addEventListener(type:'click', listener:() => this.toggleState(chatBox))
 
-        sendButton.addEventListener('click', () => this.onSendButton(chatBox))
+        sendButton.addEventListener(type:'click', listener:() => this.onSendButton(chatBox))
 
-        const node = chatBox.querySelector('input');
-        node.addEventListener("keyup", ({key}) => {
+        const node = chatBox.querySelector(selectors: 'input');
+        node.addEventListener(type: "keyup", listener:({key :string}) => {
             if (key === "Enter") {
                 this.onSendButton(chatBox)
             }
@@ -32,7 +32,7 @@ class Chatbox {
         if(this.state) {
             chatbox.classList.add('chatbox--active')
         } else {
-            chatbox.classList.remove('chatbox--active')
+            chatbox.classList.remove( tokens:'chatbox--active')
         }
     }
 
@@ -46,9 +46,10 @@ class Chatbox {
         let msg1 = { name: "User", message: text1 }
         this.messages.push(msg1);
 
-        fetch('http://127.0.0.1:5000/predict', {
+        // 'http://127.0.0.1:5000/predict'
+        fetch(input: $SCRIPT_ROOT, '/predict', int: {
             method: 'POST',
-            body: JSON.stringify({ message: text1 }),
+            body: JSON.stringify(value: { message: text1 }),
             mode: 'cors',
             headers: {
               'Content-Type': 'application/json'
