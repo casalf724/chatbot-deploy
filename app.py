@@ -6,8 +6,7 @@ app = Flask(__name__)
 CORS(app)
 
 @app.post("/predict")
-def predict():
-    text = request.get.json().get("message")
+def predict():commit
     # TODO: check if test is valid
     response = get_response(text)
     message = {"answer", response}
