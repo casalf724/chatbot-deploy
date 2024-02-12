@@ -1,4 +1,4 @@
-helloimport random
+import random
 import json
 
 import torch
