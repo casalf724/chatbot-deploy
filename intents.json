@@ -12,9 +12,9 @@
       ],
       "responses": [
         "Hey :-)",
-        "Hello, thanks for visiting",
+        "Hello, I am a rule based chatbot",
         "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Hi there, I was created with Pytorch"
       ]
     },
     {
