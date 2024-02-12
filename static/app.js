@@ -48,7 +48,7 @@ onSendButton(chatbox) {
     this.messages.push(msg1);
 
 
-    //'http://127.0.0.1:5000/predict
+    //'http://127.0.0.1:5000/predict'
     fetch( input: $SCRIPT_ROOT + '/predict', init:{
         method: 'POST',
         body: JSON.stringify(value:{ message: text1}),
