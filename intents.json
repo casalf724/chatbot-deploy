@@ -32,15 +32,15 @@
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
     },
     {
-      "tag": "items",
+      "tag": "events",
       "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
+        "Which events are part of SCRUM?",
+        "What are the types of activities in SCRUM are there?",
+        "What activities are there in a sprint?"
       ],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
+        "The Sprint includes Sprint Planning, Daily Scrum, Sprint Review, and Sprint Retrospective",
+        "There are four key activities in Scrum: Sprint Planning, Daily Scrum, Sprint Review, and Sprint Retrospective"
       ]
     },
     {
