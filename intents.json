@@ -1,20 +1,17 @@
 {
   "intents": [
     {
-      "tag": "greeting",
+      "tag": "definition",
       "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
+        "Define Scrum",
+        "explain the concept of Scrum ",
+        " Describe Scrum's purpose and function",
+        " What is scrum?",
       ],
       "responses": [
-        "Hey :-)",
-        "Hello, I am a rule based chatbot",
-        "Hi there, what can I do for you?",
-        "Hi there, I was created with Pytorch"
+        " Scrum is a flexible framework that helps individuals, teams, and organizations create value by adapting to complex problems.",
+        "Scrum is a flexible framework to create value by adapting to complex problems",
+        " A framework aiding individuals, teams, and organizations in adapting to complex problems to create value."
       ]
     },
     {
