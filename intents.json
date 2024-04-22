@@ -1,84 +1,230 @@
 {
   "intents": [
     {
-      "tag": "greeting",
+      "tag": "definition",
       "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
+        "Define Scrum",
+        "explain the concept of Scrum",
+        "Describe Scrum's purpose and function",
+        "What is scrum?"
       ],
       "responses": [
-        "Hey :-)",
-        "Hello, I am a rule based chatbot",
-        "Hi there, what can I do for you?",
-        "Hi there, I was created with Pytorch"
+        "Scrum is a flexible framework that helps individuals, teams, and organizations create value by adapting to complex problems.",
+        "Scrum is a flexible framework to create value by adapting to complex problems",
+        "A framework aiding individuals, teams, and organizations in adapting to complex problems to create value."
       ]
     },
     {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
-      "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
-      ]
-    },
-    {
-      "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
-    },
-    {
-      "tag": "items",
+      "tag": "benefits",
       "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
+        "How does Scrum promote improvement?",
+        "What are the benefits of Scrum?",
+        "How does Scrum help teams?",
+        "How does Scrum help to identify areas for improvement in work processes?"
       ],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
+        "Scrum promotes visibility and improvement by ensuring transparency in management, environment, and work techniques.",
+        "Processes like Sprint Reviews and retrospectives enable teams to pinpoint areas for enhancement and implement necessary changes.",
+        "Scrum's iterative approach enables continuous improvement and adaptation. Following each Sprint, the Scrum Team and stakeholders assess outcomes, identify improvement opportunities, and adjust for subsequent Sprints."
       ]
     },
     {
-      "tag": "payments",
-      "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
-      ],
+      "tag": "philosophy",
+      "patterns": ["What is the philosophy behind Scrum?"],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "The philosophy behind the simplicity of Scrum is that it intentionally avoids being overly prescriptive. Instead of providing detailed instructions, Scrum establishes a set of rules that guide relationships and interactions within the framework. This allows for flexibility and adaptation based on the collective intelligence of the people using it."
       ]
     },
     {
-      "tag": "delivery",
+      "tag": "values",
       "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
+        "What are the Scrum values?"
       ],
       "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
+        "Commitment, Focus, Openness, Respect, and Courage"
       ]
     },
     {
-      "tag": "funny",
+      "tag": "team",
       "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
+        "What is the Scrum team?",
+        "Who are the scrum team members?",
+        "What are the roles in the scrum team?"
       ],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "The Scrum Team consists of one Scrum Master, one Product Owner, and Developers. Within a Scrum Team, there are no sub-teams or hierarchies. It is a cohesive unit of professionals focused on one objective at a time, the Product Goal."
       ]
-    }
-  ]
-}
+    },
+    {
+      "tag": "developers",
+      "patterns": [
+        "What are the roles and responsibilities of the developers?",
+        "What are the developers accountable for?",
+        "What do the developers do?"
+      ],
+      "responses": [
+        "Creating a plan for the Sprint, the Sprint Backlog; Instilling quality by adhering to a Definition of Done; Adapting their plan each day toward the Sprint Goal; Holding each other accountable as professionals."
+      ]
+    },
+    {
+      "tag": "product owner",
+      "patterns": [
+        "What are the role and responsibilities of the product owner?",
+        "What is the product owner accountable for?",
+        "What does the product owner do?"
+      ],
+      "responses": [
+        "Develop and explicitly communicate the Product Goal; Create and clearly communicate Product Backlog items; Order Product Backlog items; and, Ensure that the Product Backlog is transparent, visible, and understood."
+      ]
+    },
+    {
+      "tag": "scrum master",
+      "patterns": [
+        "What are the role and responsibilities of the scrum master?",
+        "What is the scrum master accountable for?",
+        "What does the scrum master do?"
+      ],
+      "responses": [
+        "Coaching the team members in self-management and cross-functionality; Helping the Scrum Team focus on creating high-value Increments that meet the Definition of Done; Causing the removal of impediments to the Scrum Team's progress; and, Ensuring that all Scrum events take place and are positive, productive, and kept within the timebox."
+      ]
+    },
+    {
+      "tag": "events",
+      "patterns": [
+        "What are scrum events?",
+        "What are the key meeting opportunities?",
+        "What are the team gatherings?"
+      ],
+      "responses": [
+        "The Sprint is a container for all other events: Sprint Planning, Daily Scrum, Sprint Review, and Sprint Retrospective."
+      ]
+    },
+    {
+      "tag": "sprint",
+      "patterns": [
+          "What happens in the sprint?",
+          "What takes place in the sprint?",
+          "What is expected to occur during the sprint?"
+      ],
+      "responses": [
+          "No changes are made that would endanger the Sprint Goal; Quality does not decrease; The Product Backlog is refined as needed; and, Scope may be clarified and renegotiated with the Product Owner as more is learned."
+      ]
+      },
+      {
+      "tag": "planning",
+      "patterns": [
+          "What happens during sprint planning?",
+          "What is involved in sprint planning?",
+          "What are the outcomes of sprint planning?"
+        ],
+        "responses": [
+          "Key Topics: Why is this Sprint valuable? What can be Done this Sprint? How will the chosen work get done?",
+          "The outcomes of the sprint planning include sprint goal, the product backlog items selected for the sprint, and the plan for delivering them becoming the sprint backlog."
+        ]
+      },
+      {
+        "tag": "daily",
+        "patterns": [
+          "What happens during daily scrum?",
+          "What is involved in daily scrum?",
+          "What are the outcomes of sprint planning?"
+        ],
+        "responses": [
+          "The Daily Scrum is a quick daily meeting to assess progress and adjust plans towards the Sprint Goal, fostering focus and self-management among the Developers.",
+          "Lasting 15 minutes, the Daily Scrum involves only the Developers and occurs at the same time and place daily during the Sprint. If the Product Owner or Scrum Master is working on Sprint Backlog items, they participate as Developers.",
+          "Developers have freedom in structuring the Daily Scrum as long as it concentrates on Sprint Goal progress and generates actionable plans for the next day, enhancing team focus and self-management."
+        ]
+      },
+      {
+        "tag": "review",
+        "patterns": [
+          "What happens in the sprint review?",
+          "What is involved in sprint review?",
+          "Outcomes of sprint review."
+        ],
+        "responses": [
+          "The Sprint Review evaluates Sprint's outcomes and future adaptations, with the Scrum Team presenting their work to stakeholders and discussing progress toward the Product Goal.",
+          "It's an interactive session where accomplishments, environmental changes, and next steps are collaboratively reviewed, potentially leading to adjustments in the Product Backlog.",
+          "This working session, occurring second to last in the Sprint, typically lasts up to four hours for a one-month Sprint, with shorter Sprints adjusting the duration accordingly."
+        ]
+      },
+      {
+        "tag": "retrospective",
+        "patterns": [
+          "What happens in the sprint retrospective?",
+          "What is a retro?",
+          "What is involved in sprint retrospective?",
+          "Outcomes of sprint retrospective"
+        ],
+        "responses": [
+          "The Scrum Team inspects the last Sprint, focusing on individuals, interactions, processes, tools, and their Definition of Done. They identify and explore assumptions that led to issues. Discussion includes successes, encountered problems, and their resolutions. The team identifies changes to enhance effectiveness, prioritizing high-impact improvements. These improvements may be included in the next Sprint's backlog. The Sprint Retrospective concludes the Sprint, timeboxed to a maximum of three hours for a one-month Sprint, usually shorter for shorter Sprints."
+        ]
+      },
+      {
+        "tag": "artifacts",
+        "patterns": [
+          "What are the scrum artifacts?",
+          "What are the key outputs of scrum framework?",
+          "How do you measure value or work?"
+        ],
+        "responses": [
+          "Each artifact contains an outcome to provide information that enhances transparency and focus against which progress can be measured: For the Product Backlog it is the Product Goal. For the Sprint Backlog it is the Sprint Goal. For the Increment it is the Definition of Done."
+        ]
+      },
+      {
+        "tag": "product backlog",
+        "patterns": [
+          "What is the product backlog?",
+          "What is the outcome of the product backlog?"
+        ],
+        "responses": [
+          "The Product Backlog is an emergent, ordered list of what is needed to improve the product. It is the single source of work undertaken by the Scrum Team.",
+          "This list requires a refinement process of breaking down and defining the items in the list to enhance clarity and precision.",
+          "The list is continually revised transparently by adding specifics like description, order, and size.",
+          "The characteristics of the items in the product backlog list can differ based on the domain of work and be tailored to the specific project needs and context."
+        ]
+      },
+      {
+        "tag": "sprint backlog",
+        "patterns": [
+          "What is the sprint backlog?",
+          "What is the outcome of the sprint backlog?"
+        ],
+        "responses": [
+          "The Sprint Backlog is composed of the Sprint Goal (why), the set of Product Backlog items selected for the Sprint (what), as well as an actionable plan for delivering the Increment (how)",
+          "The Sprint Backlog is a plan by and for the Developers. A highly visible, real-time picture of the work that the Developers plan to accomplish during the Sprint to achieve the Sprint Goal.",
+          "Consequently, the Sprint Backlog is updated throughout the Sprint as more is learned. It should have enough detail that they can inspect their progress in the Daily Scrum.",
+          "Included in the sprint backlog is the sprint goal, which is the single objective of the sprint. This is the commitment of the team created during the sprint planning event and added to the sprint backlog."
+        ]
+      },
+      {
+        "tag": "increment",
+        "patterns": [
+          "What is an increment?",
+          "Tell me about the increment"
+        ],
+        "responses": [
+          "An Increment is a material stepping stone toward the Product Goal. Each Increment is additive to all prior Increments and thoroughly verified, ensuring that all Increments work together. To provide value, the Increment must be usable",
+          "Multiple Increments may be created within a Sprint. The sum of the Increments is presented at the Sprint Review thus supporting empiricism.",
+          "Work cannot be considered part of an Increment unless it meets the Definition of Done."
+        ]
+      },
+      {
+        "tag": "done",
+        "patterns": [
+          "What is the Definition of Done?",
+          "Discuss the definition of done"
+        ],
+        "responses": [
+          "The Definition of Done creates transparency by providing everyone with a shared understanding of what work was completed as part of the Increment.",
+          "If a Product Backlog item does not meet the Definition of Done, it cannot be released or even presented at the Sprint Review. Instead, it returns to the Product Backlog for future consideration.",
+          "The Developers are required to conform to the Definition of Done. If multiple Scrum Teams are working together on a product, they must mutually define and comply with the same Definition of Done."
+        ]
+      }
+    ]
+  }
+         
+
+
+
+
