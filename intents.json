@@ -20,7 +20,7 @@
         "How does Scrum promote improvement?",
         "What are the benefits of Scrum?",
         "How does Scrum help teams?",
-        "How does Scrum help to identify areas for improvement in work processes?"
+        "How does Scrum help to identify areas for improvement?"
       ],
       "responses": [
         "Scrum promotes visibility and improvement by ensuring transparency in management, environment, and work techniques.",
@@ -127,7 +127,7 @@
         "patterns": [
           "What happens during daily scrum?",
           "What is involved in daily scrum?",
-          "What are the outcomes of sprint planning?"
+          "What are the outcomes of daily scrum?"
         ],
         "responses": [
           "The Daily Scrum is a quick daily meeting to assess progress and adjust plans towards the Sprint Goal, fostering focus and self-management among the Developers.",
