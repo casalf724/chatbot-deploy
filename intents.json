@@ -127,7 +127,7 @@
         "patterns": [
           "What happens during daily scrum?",
           "What is involved in daily scrum?",
-          "What are the outcomes of sprint planning?"
+          "What are the outcomes of daily scrum?"
         ],
         "responses": [
           "The Daily Scrum is a quick daily meeting to assess progress and adjust plans towards the Sprint Goal, fostering focus and self-management among the Developers.",
