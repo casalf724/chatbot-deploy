@@ -1,3 +1,4 @@
+import nltk
 from flask import Flask, render_template, request, jsonify
 from chat import get_response
 from flask_cors import CORS
@@ -19,6 +20,9 @@ def predict(): # Get messages
     message = {"answer": response} # messages user
     return jsonify(message) # message returned in json format
 
+
+def download_nltk_resources():
+    nltk.download('punkt')
 
 if __name__ == "__main__":
     app.run(debug=True, use_reloader=False)
