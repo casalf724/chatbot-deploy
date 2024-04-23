@@ -1,28 +1,27 @@
 import nltk
 from flask import Flask, render_template, request, jsonify
-from chat import get_response
+from chat import get_response  # Ensure this module is correctly implemented
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+CORS(app)  # Enable CORS for all routes, allowing requests from any domain
 
-# shut off get to use API with Cors
-@app.get("/") # Go to home page and render template
+@app.route("/", methods=['GET'])  # Home page route that renders a template
 def index_get():
     return render_template("base.html")
 
-
-@app.post("/predict")
-def predict(): # Get messages
-    text = request.get_json().get("message")
-    # TODO: check if test is valid
-    response = get_response(text) # gets response from text
-    message = {"answer": response} # messages user
-    return jsonify(message) # message returned in json format
-
+@app.route("/predict", methods=['POST'])
+def get_chat_response():  # Function renamed for clarity and improved functionality
+    data = request.get_json()
+    if not data or "message" not in data:
+        return jsonify({"error": "No message provided"}), 400  # Error handling for missing message
+    text = data["message"]
+    response = get_response(text)  # Generate response using the chat module
+    return jsonify({"answer": response})  # Return the chat response in JSON format
 
 def download_nltk_resources():
-    nltk.download('punkt')
+    nltk.download('punkt')  # Download the 'punkt' tokenizer models from NLTK
 
 if __name__ == "__main__":
-    app.run(debug=True, use_reloader=False)
+    download_nltk_resources()  # Ensure NLTK resources are downloaded before starting the app
+    app.run(debug=True, use_reloader=False)  # Warning: set debug=False for production environments
