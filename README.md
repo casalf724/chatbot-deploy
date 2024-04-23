@@ -35,27 +35,31 @@ $ (venv) python train.py
 This will dump data.pth file. And then run
 the following command to test it in the console.
 
+```
 $ (venv) python chat.py
 ```
+Run 
 
 ```
-Run 
 $ (venv) pip install flask-cors
+```
 
 This will install the Flask with cors to run the front end with jinja2 templates.
 Then run the app and open the web page to see the UI.
 
+```
 $ (venv) python app.py
-
 ```
 
 Now for deployment set up  in render.
 
 ## Here is a Tutorial for future reference
+
 [![Alt text](https://img.youtube.com/vi/a37BL0stIuM/hqdefault.jpg)](https://youtu.be/a37BL0stIuM)  
 [https://youtu.be/a37BL0stIuM](https://youtu.be/a37BL0stIuM)
 
 ## Note
+
 The video demonstrates the first approach using jinja2 templates within the Flask app. Only slight modifications are needed to run the frontend separately. 
 
 For the alternative option use the frontend code for a standalone frontend application in the [standalone-frontend](/standalone-frontend) folder.
