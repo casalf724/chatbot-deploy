@@ -1,4 +1,4 @@
-# Chatbot Deployment with Flask and Jinja2 templates
+# How to modify Chatbot with Flask and Jinja2 templates
 
 This file is to deploy the chatbot I created from this [this](https://github.com/python-engineer/pytorch-chatbot) tutorial with Flask and JavaScript.
 
