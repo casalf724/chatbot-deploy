@@ -24,4 +24,3 @@ def download_nltk_resources():
 
 if __name__ == "__main__":
     download_nltk_resources()  # Ensure NLTK resources are downloaded before starting the app
-    app.run(debug=True, use_reloader=False)  # Warning: set debug=False for production environments
