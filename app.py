@@ -4,7 +4,7 @@ from chat import get_response  # Ensure this module is correctly implemented
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes, allowing requests from any domain
+CORS(app)  # Enable CORS for all routes, allowing requests from any domainquit
 
 @app.route("/", methods=['GET'])  # Home page route that renders a template
 def index_get():
