@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: my-web-service
+    name: my-scrum_chatbot-service # my service name
     env: python
     buildCommand: |
       python -m venv venv
