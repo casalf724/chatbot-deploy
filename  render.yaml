@@ -2,6 +2,7 @@ services:
   - type: web
     name: my-scrum_chatbot-service # my service name
     env: python
+    pythonVersion: 3.11  # Specify the desired Python version
     buildCommand: |
       python -m venv venv
       source venv/bin/activate
