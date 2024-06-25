@@ -1,4 +1,4 @@
-#!/workspaces/chatbot-deploy/venv/bin/python
+#!/workspaces/chatbot-deploy/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
