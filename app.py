@@ -25,5 +25,5 @@ def get_chat_response():  # Function renamed for clarity and improved functional
 #   nltk.download('punkt')  # Download the 'punkt' tokenizer models from NLTK
 
 if __name__ == "__main__":
-    download_nltk_resources()  # Ensure NLTK resources are downloaded before starting the app
+    # download_nltk_resources()  # Ensure NLTK resources are downloaded before starting the app
     app.run()  # Start the Flask application
